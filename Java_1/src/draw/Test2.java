@@ -47,7 +47,7 @@ public class Test2 {
 			
 			Result result = XmlUtil.xml2Bean(xml, Result.class);
 			
-			if(result.getResultObject().isWinFlag())
+			if(result != null && result.getResultObject().isWinFlag())
 			{
 				System.out.println("========================================");
 				System.out.println(result.toString());
@@ -72,7 +72,7 @@ public class Test2 {
 		
 		while(true)
 		{
-			String xml = HttpXmlClient.post("http://127.0.0.1:8080/draw_service/draw.do", params);
+			String xml = HttpXmlClient.post("http://192.168.21.7:8080/draw_service/draw.do", params);
 			
 			Result result = XmlUtil.xml2Bean(xml, Result.class);
 			
@@ -99,7 +99,7 @@ public class Test2 {
 		sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 		sb.append("<params>");
 		sb.append("<para name=\"stageId\" count=\"1\">");
-		sb.append("<value><![CDATA[1284]]></value>");
+		sb.append("<value><![CDATA[10003100]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"mobile\" count=\"1\">");
 		sb.append("<value><![CDATA[13605201444]]></value>");
@@ -117,7 +117,7 @@ public class Test2 {
 		sb.append("<value><![CDATA[]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"giftPkgNums\" count=\"1\">");
-		sb.append("<value><![CDATA[531,532,533,534,535,536,537,538]]></value>");
+		sb.append("<value><![CDATA[1195,1196,1197]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"resultType\" count=\"1\">");
 		sb.append("<value><![CDATA[xml]]></value>");

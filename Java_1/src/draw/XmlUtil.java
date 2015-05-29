@@ -5,6 +5,7 @@ import java.io.StringReader;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -42,6 +43,7 @@ public class XmlUtil {
 	@SuppressWarnings("unchecked")
 	public static <T> T xml2Bean(String xmlStr, Class<T> cls)
 	{
+		if(StringUtils.isEmpty(xmlStr))return null;
 		XStream xstream = new XStream();
 		xstream.processAnnotations(cls);
         T obj=(T)xstream.fromXML(xmlStr);
