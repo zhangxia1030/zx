@@ -23,5 +23,9 @@ public class Test {
 		}
 		
 		System.out.println(bd.doubleValue());
+		System.out.println("===================");
+		System.out.println(Math.round(10.5));
+		System.out.println("----------------------------");
+		System.out.println((10002%10000+1));
 	}
 }

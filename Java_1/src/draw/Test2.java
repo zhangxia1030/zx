@@ -39,7 +39,7 @@ public class Test2 {
 		int count = 0;
 		int award = 0;
 		
-		while(count < 10)
+		while(count < 1)
 		{
 			count++;
 			
@@ -99,7 +99,7 @@ public class Test2 {
 		sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 		sb.append("<params>");
 		sb.append("<para name=\"stageId\" count=\"1\">");
-		sb.append("<value><![CDATA[10003100]]></value>");
+		sb.append("<value><![CDATA[10003161]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"mobile\" count=\"1\">");
 		sb.append("<value><![CDATA[13605201444]]></value>");
@@ -117,7 +117,7 @@ public class Test2 {
 		sb.append("<value><![CDATA[]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"giftPkgNums\" count=\"1\">");
-		sb.append("<value><![CDATA[1195,1196,1197]]></value>");
+		sb.append("<value><![CDATA[1210,1211,1212,1213,1214,1215]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"resultType\" count=\"1\">");
 		sb.append("<value><![CDATA[xml]]></value>");
