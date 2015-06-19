@@ -1,14 +1,8 @@
 package thread;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -95,7 +89,7 @@ class DirName implements Runnable{
 				getName(file.listFiles());
 			}
 			else{
-				System.out.println(file.getName());
+				System.out.println(Thread.currentThread()+","+file.getName());
 				//BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File("D:\\123.txt"), true)));  
 				//out.write(file.getName());
 				Test1.method1(file.getName());
