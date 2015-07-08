@@ -114,7 +114,7 @@ public class HttpClientAct {
         } catch (Exception e) {
             String errorTip = "";
             if (StringUtils.indexOfIgnoreCase(e.getMessage(), "Network is unreachable") > -1) {
-                errorTip = "无法连接 Network is unreachable";
+                errorTip = "无法连接 Network is unreachable"; 
             } else if (StringUtils.indexOfIgnoreCase(e.getMessage(), "connect timed out") > -1) {
                 errorTip = "连接超时 connect timed out";
             } else if (StringUtils.indexOfIgnoreCase(e.getMessage(), "Read timed out") > -1) {
