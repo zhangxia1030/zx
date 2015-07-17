@@ -1,9 +1,21 @@
 package draw;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 public class Test3 {
 	
-	public static void main(String[] args) {
-		new Test3().test1();
+	public static void main(String[] args) throws InterruptedException {
+		//new Test3().test1();
+		Map<String, String> params = new HashMap<String, String>();
+		for(int i=0; i < 80; i++)
+		{
+			String xml = HttpXmlClient.get("http://zx-code.iteye.com/blog/2227710");
+			Thread.currentThread().sleep(1000*(new Random().nextInt(5)*10));
+		}
+		//System.out.println(xml);
+		System.out.println(new Random().nextInt(5));
 	} 
 	
 	private void test1()
