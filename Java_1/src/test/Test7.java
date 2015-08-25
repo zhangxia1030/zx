@@ -8,6 +8,8 @@ public class Test7 {
 		String b = "0001000F0254473|qwert".split("\\|")[0];
 		System.out.println(b);
 		System.out.println(b.equals("0001000F0254473"));
+		
+		System.out.println(Integer.MAX_VALUE);
 	}
 	
 }
