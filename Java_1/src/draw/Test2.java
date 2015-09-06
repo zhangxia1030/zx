@@ -99,10 +99,10 @@ public class Test2 {
 		sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 		sb.append("<params>");
 		sb.append("<para name=\"stageId\" count=\"1\">");
-		sb.append("<value><![CDATA[10004420]]></value>");
+		sb.append("<value><![CDATA[10005126]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"mobile\" count=\"1\">");
-		sb.append("<value><![CDATA[13605201444]]></value>");
+		sb.append("<value><![CDATA[15252490225]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"brand\" count=\"1\">");
 		sb.append("<value><![CDATA[]]></value>");
@@ -117,7 +117,7 @@ public class Test2 {
 		sb.append("<value><![CDATA[]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"giftPkgNums\" count=\"1\">");
-		sb.append("<value><![CDATA[1387,1388]]></value>");
+		sb.append("<value><![CDATA[1596]]></value>");
 		sb.append("</para>");
 		sb.append("<para name=\"resultType\" count=\"1\">");
 		sb.append("<value><![CDATA[xml]]></value>");
