@@ -53,8 +53,8 @@ class Conn1 implements Runnable
 			//String xml = HttpXmlClient.get("http://localhost:8080/act_tplmgr/index");
 			Map<String, String> params = new HashMap<String, String>();
 			params.put("id", "1ca39659e51845569af37346a5fe1493");
-			params.put("name", "123111");
-			params.put("phone", "1230983w4");
+			params.put("name", "root");
+			params.put("phone", "int");
 			params.put("houseStyle", "1");
 			params.put("budget", "20");
 			params.put("city", "1");

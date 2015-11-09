@@ -15,7 +15,7 @@ public class Test10 {
 		
 		ExecutorService es = Executors.newCachedThreadPool();
 		
-		for(int i=0; i < 1; i++ )
+		for(int i=0; i < 100; i++ )
 		{
 			es.execute(new Conn(begin,end));
 		}
