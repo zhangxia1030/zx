@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Test {
 	public static void main(String[] args) {
 		Double d1=0.0333D;
-		Double d2=0.0333D;
+		Double d2=0.0333D; 
 		Double d3=0.0333D;
 		System.out.println(String.valueOf(d1+d2+d3));
 		
