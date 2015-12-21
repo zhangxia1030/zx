@@ -12,7 +12,7 @@ public class Object2Object
 	public String acceptParmerter(String name, String age, String address, String work, ModelMap model)
 	{
 		model.addAttribute("msg", name + "," + age + "," + address + "," + work);
-		return "success";
+		return "success"; 
 	}
 
 	@RequestMapping("/acceptObj")
