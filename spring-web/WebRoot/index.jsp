@@ -41,7 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		</tr>
     		
     		<tr>
-    			<td></td>
+    			<td>nginx 1</td>
     			<td></td>
     		</tr>
     		

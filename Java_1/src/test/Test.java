@@ -1,6 +1,8 @@
 package test;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test {
 	public static void main(String[] args) {
@@ -27,5 +29,11 @@ public class Test {
 		System.out.println(Math.round(10.5));
 		System.out.println("----------------------------");
 		System.out.println((10002%10000+1));
+		System.out.println("===================");
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("name", "1234567");
+		System.out.println(map.get("name"));
+		map.put("name", "qwer");
+		System.out.println(map.get("name"));
 	}
 }

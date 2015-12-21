@@ -12,10 +12,18 @@ public class Test {
 	public static void main(String[] args) throws InterruptedException {
 
 		Test t = new Test();
-		t.testSet();
+		t.testSet1();
 	}
 
-	Jedis jedis = new Jedis("localhost", 6379);// 连接redis
+	Jedis jedis = new Jedis("localhost", 6381);// 连接redis
+	
+	public void testSet1() {
+		System.out.println(jedis.smembers("user"));// 获取所有加入的value
+		System.out.println(jedis.sismember("user", "who"));// 判断 who
+															// 是否是user集合的元素
+		System.out.println(jedis.srandmember("user"));
+		System.out.println(jedis.scard("user"));// 返回集合的元素个数
+	}
 
 	public void testMap() {
 		// -----添加数据----------
