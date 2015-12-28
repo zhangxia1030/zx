@@ -15,5 +15,8 @@ public class Test9 {
 		
 		Map<String, Object> map = new HashMap<String, Object>();
 		System.out.println(map.get("name"));
+		System.out.println("============================");
+		String ss = "1,2,3,4,5";
+		System.out.println(ss.replaceAll(",", "','"));
 	}
 }

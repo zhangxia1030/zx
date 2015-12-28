@@ -176,9 +176,9 @@ public class Test1 {
     {
     	User uu;
 		try {
-			uu = memcachedClient.get("test1");
+			uu = memcachedClient.get("storeMessage_15335170381");
 			//memcachedClient.touch("test1", 10);
-			System.out.println(uu+":"+uu.getAge()+","+uu.getName());
+			System.out.println(uu);
 			memcachedClient.shutdown();
 		} catch (TimeoutException e) {
 			e.printStackTrace();
@@ -193,7 +193,7 @@ public class Test1 {
     
 	public static void main(String[] args) {
 		//new Test1().testObject();
-		new Test1().testAll();
+		//new Test1().testAll();
 		new Test1().get();
 	}
 	
