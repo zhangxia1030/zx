@@ -11,7 +11,7 @@ public class BigDataFile {
 	private class DealFile implements Runnable
 	{
 		 
-		//存放遍历的结果
+		//存放遍历的结果  
 		BlockingQueue<File> bFile = null;
 		
 		//每个线程独有的file文件夹
