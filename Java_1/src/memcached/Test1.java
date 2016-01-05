@@ -176,7 +176,7 @@ public class Test1 {
     {
     	User uu;
 		try {
-			uu = memcachedClient.get("storeMessage_15335170381");
+			uu = memcachedClient.get("storeMessage_15051842918");
 			//memcachedClient.touch("test1", 10);
 			System.out.println(uu);
 			memcachedClient.shutdown();
