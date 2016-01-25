@@ -10,7 +10,7 @@ public class BigDataFile {
 	
 	private class DealFile implements Runnable
 	{
-		 
+		  
 		//存放遍历的结果  zx
 		BlockingQueue<File> bFile = null;
 		
@@ -61,7 +61,7 @@ public class BigDataFile {
 		BlockingQueue<File> bFile = new LinkedBlockingQueue<File>();
 		
 		//需要遍历的文件夹
-		File file = new File("D://");
+		File file = new File("E://");
 		
 		//线程池
 		ExecutorService es = Executors.newCachedThreadPool();
