@@ -22,6 +22,7 @@ import org.junit.Test;
 public class TestFile {
 	
 	//@Test
+	//造数据，测试下面各个方法读取数据性能
 	public void makeFile() throws IOException
 	{
 		File file = new File("D:\\phone.txt");
@@ -40,13 +41,18 @@ public class TestFile {
 		os.close();
 	}
 	
-	@SuppressWarnings("unused")
+	//生成字符串
 	private String bulidPhone()
 	{
 		Long lo = new Random().nextLong();
 		return String.valueOf(lo);
 	}
 	
+	/**
+	 * @Title: readTxt1
+	 * @Description: 使用常规的jdk的io解析输出文件数据
+	 * @throws IOException 
+	 */ 
 	@Test
 	public void readTxt1() throws IOException
 	{
@@ -66,6 +72,11 @@ public class TestFile {
 		System.out.println("readTxt1方法，使用内存="+(Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory())+",使用时间毫秒="+(end-start));
 	}
 	
+	/**
+	 * @Title: readTxt2
+	 * @Description: 使用Scanner扫面文件解析文件数据
+	 * @throws IOException 
+	 */ 
 	@Test
 	public void readTxt2() throws IOException
 	{
@@ -76,8 +87,9 @@ public class TestFile {
 		
 		while(scan.hasNextLine())
 		{
-			//System.out.println(scan.next());
-			scan.next();
+			//System.out.println(scan.nextLine());
+			scan.nextLine();
+			//scan.next();
 		}
 		
 		is.close();
@@ -87,6 +99,11 @@ public class TestFile {
 		System.out.println("readTxt2方法，使用内存="+(Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory())+",使用时间毫秒="+(end-start));
 	}
 	
+	/**
+	 * @Title: readTxt3
+	 * @Description: 使用org.apache.commons.io.FileUtils，apache工具类解析文件
+	 * @throws IOException 
+	 */ 
 	@Test
 	public void readTxt3() throws IOException
 	{
