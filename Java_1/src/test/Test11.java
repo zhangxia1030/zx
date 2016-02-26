@@ -15,5 +15,9 @@ public class Test11
 		
 		System.out.println(new Test11());
 		System.out.println(new String("hello"));
+		
+		System.out.println(1+1+'1'+1+1+1+1+"1");
+		System.out.println(1+'1');
+		System.out.println("1"+1);
 	}
 }
